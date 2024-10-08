@@ -7,8 +7,14 @@ const spegniEl = document.getElementById('spegni');
 
 
 // 2. Collego un event list al bottone
-accendiEl.addEventListener('click', function(){
+accendiEl.addEventListener('click', function () {
     offEl.src = onEl.src;
+    accendiEl.innerHTML = 'Spegni'
 })
 
+spegniEl.addEventListener('click', function () {
+    onEl.src = offEl.src;
+    spegniEl.innerHTML = 'Accendi'
+    
+}) 
 
